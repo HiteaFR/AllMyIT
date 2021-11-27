@@ -2,6 +2,19 @@
 
 AllMyIT est un module Powershell permettant de configurer Windows et Windows Server avec un fichier JSON.
 
+Venez nous soutenir sur les Réseaux et Youtube :)
+
+- [Hitea.fr](https://hitea.fr/)
+- [Youtube](https://www.youtube.com/channel/UCt30dovkjqINMeh0p5DUoVQ?sub_confirmation=1)
+- [Facebook](https://www.facebook.com/hitea.fr)
+- [Twitter](https://twitter.com/HiteaFR)
+- [Linkedin](https://www.linkedin.com/company/hitea-fr)
+- [GitHub](https://github.com/HiteaFR)
+
+## Documentation
+
+Toute la documentation: [HiteaFR.github.io/PsPassManager](https://HiteaFR.github.io/PsPassManager)
+
 ## Documentation
 
 The documentation is build master branch. [HiteaFR.github.io/AllMyIT](https://HiteaFR.github.io/AllMyIT)
