@@ -5,8 +5,8 @@ theme:
   feature:
     tabs: true
   palette:
-    primary: "amber"
-    accent: "deep orange"
+    primary: "green"
+    accent: "light green"
 
 markdown_extensions:
   - codehilite
