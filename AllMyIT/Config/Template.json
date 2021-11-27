@@ -1,0 +1,151 @@
+﻿{
+    "Set-SmbSource":  [
+                          {
+                              "DriveName":  true,
+                              "DrivePath":  true,
+                              "Credential":  false
+                          },
+                          {
+                              "DriveName":  true,
+                              "DrivePath":  true,
+                              "Credential":  false
+                          }
+                      ],
+    "New-LocalAdmin":  [
+                           {
+                               "NewLocalAdmin":  true,
+                               "Password":  true
+                           }
+                       ],
+    "Set-Network":  [
+                        {
+                            "InterfaceIndex":  true,
+                            "IPAddress":  false,
+                            "PrefixLength":  false,
+                            "DefaultGateway":  false,
+                            "Dns":  true
+                        }
+                    ],
+    "Set-ConfigMode":  [
+                           {
+                               "Statut":  true
+                           }
+                       ],
+    "Set-Accessibility":  [
+                              {
+                                  "Statut":  true
+                              }
+                          ],
+    "Set-RdpAccess":  [
+                          {
+                              "Statut":  true,
+                              "FirewallGroup":  false
+                          }
+                      ],
+    "Set-ComputerName":  [
+                             {
+                                 "NewName":  true
+                             }
+                         ],
+    "Set-WindowsActivation":  [
+                                  {
+                                      "WinKey":  true
+                                  }
+                              ],
+    "Set-DiskStorage":  [
+                            {
+                                "DiskNumber":  true,
+                                "DriveLetter":  true,
+                                "DriveLabel":  true
+                            }
+                        ],
+    "Install-Printer":  [
+                            {
+                                "IPAddress":  true,
+                                "PrinterName":  true,
+                                "DriverName":  false,
+                                "DriverInfPath": false
+                            }
+                        ],
+    "Add-ComputerDomain":  [
+                               {
+                                   "DomaineName":  true,
+                                   "Credential":  true
+                               }
+                           ],
+    "Set-RegKey":  [
+                       {
+                           "Path":  true,
+                           "Key":  true,
+                           "Param":  false,
+                           "Value":  false
+                       }
+                   ],
+    "Uninstall-Appx":  [
+                           {
+                               "Appx":  true
+                           }
+                       ],
+    "Uninstall-Msi":  [
+                          {
+                              "Msi":  true
+                          }
+                      ],
+    "Set-HypervVM":  [
+                         {
+                             "VmName":  true,
+                             "VmRam":  true,
+                             "VmProc":  true,
+                             "SwitchName":  true,
+                             "VmPath":  false,
+                             "VhdPath":  false,
+                             "VhdSize":  false
+                         }
+                     ],
+    "Install-Features":  [
+                             {
+                                 "Features":  true
+                             }
+                         ],
+    "Install-NiniteApps":  [
+                               {
+                                   "Apps":  true
+                               }
+                           ],
+    "Install-ChocoApps":  [
+                              {
+                                  "Apps":  true
+                              }
+                          ],
+    "Install-WinGetApps":  [
+                              {
+                                  "Apps":  true
+                              }
+                          ],
+    "Copy-FileApp":  [
+                         {
+                             "Path":  true,
+                             "DesktopLink":  false
+                         }
+                     ],
+    "Install-ExeApp":  [
+                           {
+                                "Name" : true,
+                               "Path":  true,
+                               "SetupArgs":  false
+                           }
+                       ],
+    "Install-MsiApp":  [
+                           {
+                               "Name" : true,
+                               "Path":  true,
+                               "SetupArgs":  false
+                           }
+                       ],
+    "Install-WacApp":  [
+                           {
+                               "Port":  true,
+                               "CertOption": false
+                           }
+                       ]
+}
