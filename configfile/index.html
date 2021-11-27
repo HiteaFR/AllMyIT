@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-4.4.2">
     
     
       
@@ -47,7 +47,7 @@
       
         
         
-        <meta name="theme-color" content="#ffa000">
+        <meta name="theme-color" content="#4caf50">
       
     
     
@@ -71,7 +71,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="amber" data-md-color-accent="deep-orange">
+    <body dir="ltr" data-md-color-primary="green" data-md-color-accent="light-green">
   
     <svg class="md-svg">
       <defs>
@@ -546,128 +546,119 @@
 <p>Utilisez seulement des caractères AlphaNumériques.</p>
 <h2 id="installer-section">Installer section</h2>
 <h3 id="install-features">Install-Features</h3>
-<div class="codehilite"><pre><span></span><span class="ss">&quot;Install-Features&quot;</span><span class="p">:</span> <span class="err">{</span>
+<div class="codehilite"><pre><span></span><code>&quot;Install-Features&quot;: {
 
-<span class="ss">&quot;Features&quot;</span><span class="p">:</span> <span class="p">[</span>
+&quot;Features&quot;: [
 
-<span class="ss">&quot;Hyper-V&quot;</span><span class="p">,</span>
+&quot;Hyper-V&quot;,
 
-<span class="ss">&quot;Hyper-V-PowerShell&quot;</span><span class="p">,</span>
+&quot;Hyper-V-PowerShell&quot;,
 
-<span class="ss">&quot;Windows-Server-Backup&quot;</span>
+&quot;Windows-Server-Backup&quot;
 
-<span class="p">]</span>
+]
 
-<span class="err">}</span>
-</pre></div>
-
+}
+</code></pre></div>
 
 <h3 id="install-niniteapps">Install-NiniteApps</h3>
-<div class="codehilite"><pre><span></span><span class="ss">&quot;Install-NiniteApps&quot;</span><span class="p">:</span>  <span class="err">{</span>
+<div class="codehilite"><pre><span></span><code>&quot;Install-NiniteApps&quot;:  {
 
-<span class="ss">&quot;Apps&quot;</span><span class="p">:</span> <span class="p">[</span>
+&quot;Apps&quot;: [
 
-<span class="ss">&quot;Firefox&quot;</span><span class="p">,</span>
+&quot;Firefox&quot;,
 
-<span class="ss">&quot;7zip&quot;</span>
+&quot;7zip&quot;
 
-<span class="p">]</span>
+]
 
-<span class="err">}</span>
-</pre></div>
-
+}
+</code></pre></div>
 
 <h3 id="install-chocoapps">Install-ChocoApps</h3>
-<div class="codehilite"><pre><span></span><span class="ss">&quot;Install-ChocoApps&quot;</span><span class="p">:</span>  <span class="err">{</span>
+<div class="codehilite"><pre><span></span><code>&quot;Install-ChocoApps&quot;:  {
 
-<span class="ss">&quot;Apps&quot;</span><span class="p">:</span> <span class="p">[</span>
+&quot;Apps&quot;: [
 
-<span class="ss">&quot;Firefox&quot;</span><span class="p">,</span>
+&quot;Firefox&quot;,
 
-<span class="ss">&quot;7zip&quot;</span>
+&quot;7zip&quot;
 
-<span class="p">]</span>
+]
 
-<span class="err">}</span>
-</pre></div>
-
+}
+</code></pre></div>
 
 <h3 id="copy-fileapp">Copy-FileApp</h3>
-<div class="codehilite"><pre><span></span><span class="ss">&quot;Copy-FileApp&quot;</span><span class="p">:</span>  <span class="err">{</span>
+<div class="codehilite"><pre><span></span><code>&quot;Copy-FileApp&quot;:  {
 
-<span class="ss">&quot;Path&quot;</span><span class="p">:</span>  <span class="ss">&quot;PATH_TO_THE_FILE&quot;</span><span class="p">,</span>
+&quot;Path&quot;:  &quot;PATH_TO_THE_FILE&quot;,
 
-<span class="ss">&quot;DesktopLink&quot;</span><span class="p">:</span>  <span class="k">true</span>
+&quot;DesktopLink&quot;:  true
 
-<span class="err">}</span>
-</pre></div>
-
+}
+</code></pre></div>
 
 <h3 id="install-exeapp">Install-ExeApp</h3>
-<div class="codehilite"><pre><span></span><span class="ss">&quot;Install-ExeApp&quot;</span><span class="p">:</span>  <span class="err">{</span>
+<div class="codehilite"><pre><span></span><code>&quot;Install-ExeApp&quot;:  {
 
-<span class="ss">&quot;Path&quot;</span><span class="p">:</span>  <span class="ss">&quot;PATH_TO_THE_EXE&quot;</span><span class="p">,</span>
+&quot;Path&quot;:  &quot;PATH_TO_THE_EXE&quot;,
 
-<span class="ss">&quot;SetupArgs&quot;</span><span class="p">:</span>  <span class="ss">&quot;/silent&quot;</span>
+&quot;SetupArgs&quot;:  &quot;/silent&quot;
 
-<span class="err">}</span>
-</pre></div>
-
+}
+</code></pre></div>
 
 <h3 id="install-msiapp">Install-MsiApp</h3>
-<div class="codehilite"><pre><span></span><span class="ss">&quot;Install-ExeApp&quot;</span><span class="p">:</span>  <span class="err">{</span>
+<div class="codehilite"><pre><span></span><code>&quot;Install-ExeApp&quot;:  {
 
-<span class="ss">&quot;Path&quot;</span><span class="p">:</span>  <span class="ss">&quot;PATH_TO_THE_MSI&quot;</span><span class="p">,</span>
+&quot;Path&quot;:  &quot;PATH_TO_THE_MSI&quot;,
 
-<span class="ss">&quot;SetupArgs&quot;</span><span class="p">:</span>  <span class="ss">&quot;/silent&quot;</span>
+&quot;SetupArgs&quot;:  &quot;/silent&quot;
 
-<span class="err">}</span>
-</pre></div>
-
+}
+</code></pre></div>
 
 <h2 id="settings-section">Settings section</h2>
 <h3 id="new-localadmin">New-LocalAdmin</h3>
-<div class="codehilite"><pre><span></span><span class="ss">&quot;New-LocalAdmin&quot;</span><span class="p">:</span> <span class="err">{</span>
+<div class="codehilite"><pre><span></span><code>&quot;New-LocalAdmin&quot;: {
 
-    <span class="ss">&quot;NewLocalAdmin&quot;</span><span class="p">:</span> <span class="ss">&quot;Name&quot;</span><span class="p">,</span>
+    &quot;NewLocalAdmin&quot;: &quot;Name&quot;,
 
-    <span class="ss">&quot;Password&quot;</span><span class="p">:</span> <span class="ss">&quot;Password&quot;</span>
+    &quot;Password&quot;: &quot;Password&quot;
 
-<span class="err">}</span>
-</pre></div>
-
+}
+</code></pre></div>
 
 <h3 id="set-network">Set-Network</h3>
-<div class="codehilite"><pre><span></span><span class="ss">&quot;Set-Network&quot;</span><span class="p">:</span>  <span class="err">{</span>
+<div class="codehilite"><pre><span></span><code>&quot;Set-Network&quot;:  {
 
-<span class="ss">&quot;IPAddress&quot;</span><span class="p">:</span>  <span class="ss">&quot;192.168.1.100&quot;</span><span class="p">,</span>
+&quot;IPAddress&quot;:  &quot;192.168.1.100&quot;,
 
-<span class="ss">&quot;PrefixLength&quot;</span><span class="p">:</span>  <span class="ss">&quot;24&quot;</span><span class="p">,</span>
+&quot;PrefixLength&quot;:  &quot;24&quot;,
 
-<span class="ss">&quot;DefaultGateway&quot;</span><span class="p">:</span>  <span class="ss">&quot;192.168.1.254&quot;</span><span class="p">,</span>
+&quot;DefaultGateway&quot;:  &quot;192.168.1.254&quot;,
 
-<span class="ss">&quot;Dns&quot;</span><span class="p">:</span>  <span class="ss">&quot;8.8.8.8&quot;</span>
+&quot;Dns&quot;:  &quot;8.8.8.8&quot;
 
-<span class="err">}</span>
-</pre></div>
-
+}
+</code></pre></div>
 
 <h3 id="set-configmode">Set-ConfigMode</h3>
-<div class="codehilite"><pre><span></span><span class="ss">&quot;Set-ConfigMode&quot;</span><span class="p">:</span> <span class="err">{</span>
+<div class="codehilite"><pre><span></span><code>&quot;Set-ConfigMode&quot;: {
 
-    <span class="ss">&quot;Statut&quot;</span><span class="p">:</span> <span class="k">true</span>
+    &quot;Statut&quot;: true
 
-<span class="err">}</span>
-</pre></div>
-
+}
+</code></pre></div>
 
 <h3 id="set-accessibility">Set-Accessibility</h3>
-<div class="codehilite"><pre><span></span><span class="ss">&quot;Set-Accessibility&quot;</span><span class="p">:</span> <span class="err">{</span>
+<div class="codehilite"><pre><span></span><code>&quot;Set-Accessibility&quot;: {
 
-    <span class="ss">&quot;Statut&quot;</span><span class="p">:</span> <span class="k">true</span>
+    &quot;Statut&quot;: true
 
-<span class="err">}</span>
-</pre></div>
+}
+</code></pre></div>
                 
                   
                 
@@ -732,7 +723,7 @@
     
       <script src="../assets/javascripts/application.c648116f.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      <script>app.initialize({version:"1.2.3",url:{base:".."}})</script>
       
     
   </body>

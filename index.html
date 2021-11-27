@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-4.4.2">
     
     
       
@@ -47,7 +47,7 @@
       
         
         
-        <meta name="theme-color" content="#ffa000">
+        <meta name="theme-color" content="#4caf50">
       
     
     
@@ -71,7 +71,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="amber" data-md-color-accent="deep-orange">
+    <body dir="ltr" data-md-color-primary="green" data-md-color-accent="light-green">
   
     <svg class="md-svg">
       <defs>
@@ -450,33 +450,29 @@
 <p>Windows 10+ / Windows Server 2016+</p>
 <h2 id="installation">Installation</h2>
 <h3 id="powershell-gallery">PowerShell Gallery</h3>
-<div class="codehilite"><pre><span></span>    <span class="nb">Install-Module</span> <span class="n">-Name</span> <span class="n">AllMyIT</span>
-</pre></div>
-
+<div class="codehilite"><pre><span></span><code>    <span class="nb">Install-Module</span> <span class="n">-Name</span> <span class="n">AllMyIT</span>
+</code></pre></div>
 
 <p>Page du Module: <a href="https://www.powershellgallery.com/packages/AllMyIT">powershellgallery.com/packages/AllMyIT</a></p>
 <h3 id="depot-git">Dépot Git</h3>
-<div class="codehilite"><pre><span></span>    <span class="n">Git</span> <span class="n">clone</span> <span class="n">https</span><span class="err">:</span><span class="p">//</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">HiteaFR</span><span class="p">/</span><span class="n">AllMyIT</span><span class="p">.</span><span class="n">git</span>
+<div class="codehilite"><pre><span></span><code>    <span class="n">Git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">://</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">HiteaFR</span><span class="p">/</span><span class="n">AllMyIT</span><span class="p">.</span><span class="n">git</span>
 
     <span class="nb">Set-ExecutionPolicy</span> <span class="n">Bypass</span> <span class="n">-Scope</span> <span class="k">Process</span> <span class="n">-Force</span>
 
     <span class="nb">Import-Module</span> <span class="n">-FullyQualifiedName</span> <span class="no">[CHEMIN_VERS_LE_MODULE]</span> <span class="n">-Force</span> <span class="n">-Verbose</span>
-</pre></div>
-
+</code></pre></div>
 
 <h3 id="telechargement">Téléchargement</h3>
 <p>Télécharger la dernière version : <a href="https://github.com/HiteaFR/AllMyIT/releases/latest">github.com/HiteaFR/AllMyIT/releases/latest</a></p>
-<div class="codehilite"><pre><span></span>    <span class="nb">Set-ExecutionPolicy</span> <span class="n">Bypass</span> <span class="n">-Scope</span> <span class="k">Process</span> <span class="n">-Force</span>
+<div class="codehilite"><pre><span></span><code>    <span class="nb">Set-ExecutionPolicy</span> <span class="n">Bypass</span> <span class="n">-Scope</span> <span class="k">Process</span> <span class="n">-Force</span>
 
     <span class="nb">Import-Module</span> <span class="n">-FullyQualifiedName</span> <span class="no">[CHEMIN_VERS_LE_MODULE]</span> <span class="n">-Force</span> <span class="n">-Verbose</span>
-</pre></div>
-
+</code></pre></div>
 
 <h2 id="usage">Usage</h2>
-<div class="codehilite"><pre><span></span>    <span class="c"># Lancer la confifuration à partir du fichier Json</span>
+<div class="codehilite"><pre><span></span><code>    <span class="c"># Lancer la confifuration à partir du fichier Json</span>
     <span class="n">Ami</span> <span class="n">-PSPath</span> <span class="s2">&quot;CHEMIN_VERS_LE_FICHIER_JSON&quot;</span>
-</pre></div>
-
+</code></pre></div>
 
 <p>Voir toute la doc :: <a href="https://HiteaFR.github.io/AllMyIT">HiteaFR.github.io/AllMyIT</a></p>
                 
@@ -543,7 +539,7 @@
     
       <script src="assets/javascripts/application.c648116f.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:"."}})</script>
+      <script>app.initialize({version:"1.2.3",url:{base:"."}})</script>
       
     
   </body>
