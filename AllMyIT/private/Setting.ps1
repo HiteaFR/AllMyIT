@@ -171,7 +171,7 @@ function Install-Printer {
     $checkExist = Get-PrinterPort -Name $Port -ErrorAction SilentlyContinue
 
     if ($Args.DriverName -and ![bool]((Get-PrinterDriver).Name -match $Args.DriverName)) {
-        pnputil.exe /a $Args.DriverInfPath
+        pnputil.exe -a $Args.DriverInfPath
         Add-PrinterDriver -Name $Args.DriverName -InfPath $Args.DriverInfPath
         Write-Verbose -Message "$($Args.DriverName) driver installed"
     }
@@ -196,7 +196,7 @@ function Add-ComputerDomain {
 
     $Credential = Get-Variable $Args.Credential -ValueOnly
 
-    Add-Computer -DomainName $Args.DomaineName -DomainCredential $Credential -force -verbose -NoRestart
+    Add-Computer -DomainName $Args.DomaineName -Credential $Credential -force -verbose
 
 }
 

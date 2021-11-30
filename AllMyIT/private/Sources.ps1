@@ -32,6 +32,6 @@ function Set-AmiCreds {
     [securestring]$Password = ConvertTo-SecureString $Args.Password -AsPlainText -Force
     $Credential = New-Object System.Management.Automation.PsCredential($Args.Username, $Password)
 
-    Set-Variable -Name $Args.Name -Value $Credential
+    New-Variable -Name $Args.Name -Value $Credential -Scope global
 
 }
