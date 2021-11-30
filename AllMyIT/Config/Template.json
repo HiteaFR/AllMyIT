@@ -1,10 +1,12 @@
 ﻿{
+    "Set-AmiCreds":  [
+        {
+            "Name":  true,
+            "Username":  true,
+            "Password":  false
+        }
+    ],
     "Set-SmbSource":  [
-                          {
-                              "DriveName":  true,
-                              "DrivePath":  true,
-                              "Credential":  false
-                          },
                           {
                               "DriveName":  true,
                               "DrivePath":  true,

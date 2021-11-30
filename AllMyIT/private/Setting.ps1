@@ -194,7 +194,9 @@ function Add-ComputerDomain {
         [psobject]$Args
     )
 
-    Add-Computer -DomainName $Args.DomaineName -DomainCredential $Args.Credential -force -verbose -NoRestart
+    $Credential = Get-Variable $Args.Credential -ValueOnly
+
+    Add-Computer -DomainName $Args.DomaineName -DomainCredential $Credential -force -verbose -NoRestart
 
 }
 
