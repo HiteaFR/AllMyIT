@@ -57,7 +57,7 @@ function Ami {
                 }
             }
 
-            Save-Configuration -Configuration $configuration
+            # Save-Configuration -Configuration $configuration
         }
     
         Read-Host "End..., press enter"

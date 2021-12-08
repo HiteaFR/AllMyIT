@@ -9,10 +9,10 @@ function Import-Configuration() {
     )
 
     if (Test-Path $Profile) {
-        $OutputFile = Split-Path $Profile -leaf
-        Start-BitsTransfer -Source $Profile -Destination (Join-Path $InstallPath ("\config\" + $OutputFile))
-        $Configuration = (Get-Content (Join-Path $InstallPath ("\config\" + $OutputFile)) | ConvertFrom-Json)
-        $Configuration | Add-Member Filename (Join-Path $InstallPath ("\config\" + $OutputFile)) -Force
+        #$OutputFile = Split-Path $Profile -leaf
+        #Start-BitsTransfer -Source $Profile -Destination (Join-Path $InstallPath ("\config\" + $OutputFile))
+        $Configuration = (Get-Content $Profile | ConvertFrom-Json)
+        $Configuration | Add-Member Filename $Profile -Force
         Write-Verbose -Message "Config file imported !"
         return $Configuration
     }
